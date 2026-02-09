@@ -3,7 +3,8 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('recipes/list', list, name='recipe_list'),
+    path('recipe/<int:index>', index, name='temporary_url')
 ]
 
 app_name = "ledger"
