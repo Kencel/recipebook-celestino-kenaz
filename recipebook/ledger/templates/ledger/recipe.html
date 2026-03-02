@@ -3,7 +3,7 @@
 {% block header %}<h2>Recipe Book</h2>{% endblock %}
 
 {% block content %}
-{{ name }}
+<h3>{{ recipe.name }} by {{ recipe.author }}</h3>
 <ul>
     {% for ingredient in recipe.ingredients.all %}
         <li>
