@@ -17,6 +17,13 @@
     {% endfor %}
 </ul>
 
-<a href="{% url 'ledger:recipe_list' %}">Back</a>
+<div>
+    <a href="{% url 'ledger:recipe_add_image' pk=recipe.pk %}">Add Image</a>
+</div>
+
+<div>
+    <a href="{% url 'ledger:recipe_list' %}">Back</a>
+</div>
+
 
 {% endblock %}
