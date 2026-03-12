@@ -8,8 +8,12 @@ class RecipeIngredientInLine(admin.TabularInline):
     model = RecipeIngredient
 
 
+class RecipeImageInLine(admin.TabularInline):
+    model = RecipeImage
+
+
 class RecipeAdmin(admin.ModelAdmin):
-    inlines = [RecipeIngredientInLine]
+    inlines = [RecipeIngredientInLine, RecipeImageInLine]
 
 
 class IngredientAdmin(admin.ModelAdmin):
